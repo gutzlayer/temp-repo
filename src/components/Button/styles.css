@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  background: rgb(5, 5, 201);
+  font-size: large;
+  color: rgb(221, 221, 221);
+  border: none;
+  border-radius: 0px 30px 30px 30px;
+  margin-top: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: rgb(118, 118, 185);
+  cursor: not-allowed;
+}
