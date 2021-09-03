@@ -24,7 +24,7 @@ const props = {
   ],
 };
 
-describe('<Posts/>', () => {
+describe('<Posts />', () => {
   test('should render posts', () => {
     render(<Posts {...props} />);
 
@@ -36,7 +36,7 @@ describe('<Posts/>', () => {
 
   test('should not render posts', () => {
     render(<Posts />);
-    expect(screen.querylByRole('heading', { name: /title/i })).not.toBeInTheDocumente();
+    expect(screen.queryByRole('heading', { name: /title/i })).not.toBeInTheDocument();
   });
 
   test('should match snapshot', () => {
