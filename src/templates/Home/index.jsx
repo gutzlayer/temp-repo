@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import './styles.css';
 
 import { Posts } from '../../components/Posts';
-import { loadPosts } from '../../utils/load-posts';
+import { loadPosts } from '../../essential/load-posts';
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
 
@@ -57,7 +57,7 @@ export const Home = () => {
 
       {filteredPosts.length > 0 && <Posts posts={filteredPosts} />}
 
-      {filteredPosts.length === 0 && <p>Não existem posts =</p>}
+      {filteredPosts.length === 0 && <p>Não existem posts</p>}
 
       <div className="button-container">
         {!searchValue && <Button text="Load more posts" onClick={loadMorePosts} disabled={noMorePosts} />}
