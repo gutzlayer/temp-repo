@@ -22,3 +22,26 @@ exports[`<PostCard /> shoul match sanpshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`<PostCard /> should match snapshot 1`] = `
+<div
+  class="post"
+>
+  <img
+    alt="title 1"
+    src="img/img.png"
+  />
+  <div
+    class="post-content"
+  >
+    <h1>
+      title 1
+       
+      0
+    </h1>
+    <p>
+      body 1
+    </p>
+  </div>
+</div>
+`;
